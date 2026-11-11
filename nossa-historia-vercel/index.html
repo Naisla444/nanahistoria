@@ -1,0 +1,127 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Nossa História</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6f1;--card:#fff;--ink:#3a2229;--mut:#8a6f74;--wine:#722f3d;--rose:#b5707a;--beige:#ecdfd0;--line:#ead9cc;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c1215;--card:#2a1b20;--ink:#f3e6e2;--mut:#bfa3a8;--wine:#e3a0ad;--rose:#d98c9a;--beige:#3a2a2c;--line:#44302f;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#1c1215;--card:#2a1b20;--ink:#f3e6e2;--mut:#bfa3a8;--wine:#e3a0ad;--rose:#d98c9a;--beige:#3a2a2c;--line:#44302f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Lato,system-ui,sans-serif;transition:background .4s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--wine);margin:0 0 .4em;line-height:1.15}
+h1{font-size:clamp(2.4rem,9vw,4rem)}h2{font-size:1.9rem}h3{font-size:1.35rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:6px;padding:8px 10px}
+nav{display:flex;gap:4px;overflow-x:auto;flex:1;scrollbar-width:none}nav::-webkit-scrollbar{display:none}
+nav button{white-space:nowrap;border:0;background:none;color:var(--mut);padding:8px 12px;border-radius:20px;font:inherit;font-size:.9rem;cursor:pointer}
+nav button.on{background:var(--wine);color:var(--bg)}
+.ib{border:1px solid var(--line);background:var(--card);color:var(--wine);border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:1rem;flex:none}
+main{max-width:860px;margin:0 auto;padding:22px 16px 60px;animation:fi .5s}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero{text-align:center;padding:10px 0 26px}
+.hero .pic{width:min(260px,70vw);aspect-ratio:1;border-radius:50% 50% 46% 54%/60% 60% 40% 40%;object-fit:cover;border:6px solid var(--card);box-shadow:0 10px 40px #722f3d33;background:var(--beige);display:block;margin:0 auto 18px}
+.phrase{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.35rem;color:var(--rose)}
+.cnt{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:22px auto;max-width:460px}
+.cnt div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 4px}
+.cnt b{display:block;font:600 1.9rem 'Cormorant Garamond',serif;color:var(--wine)}.cnt span{font-size:.72rem;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 14px;box-shadow:0 2px 14px #722f3d0f}
+.card img.c{width:100%;max-height:340px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+.meta{color:var(--mut);font-size:.82rem}.txt{white-space:pre-wrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.grid .ph{position:relative;aspect-ratio:1;border-radius:12px;overflow:hidden;cursor:pointer;background:var(--beige)}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.grid .ph:hover img{transform:scale(1.05)}
+.btn{border:0;background:var(--wine);color:var(--bg);padding:10px 18px;border-radius:24px;font:inherit;cursor:pointer}
+.btn.s{background:var(--beige);color:var(--wine)}.btn.sm{padding:5px 12px;font-size:.8rem}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:18px;padding:4px 12px;font-size:.85rem;cursor:pointer}.chip.on{background:var(--rose);color:#fff;border-color:var(--rose)}
+.tl{border-left:2px solid var(--rose);margin-left:8px;padding-left:18px}.tl .card{position:relative}.tl .card::before{content:"";position:absolute;left:-26px;top:20px;width:12px;height:12px;border-radius:50%;background:var(--wine);border:2px solid var(--bg)}
+.badge{font-size:.7rem;background:var(--beige);color:var(--wine);padding:2px 8px;border-radius:10px}
+#mo{position:fixed;inset:0;background:#000a;z-index:50;display:none;align-items:center;justify-content:center;padding:14px}
+#mo>div{background:var(--bg);border-radius:18px;padding:20px;max-width:560px;width:100%;max-height:90vh;overflow:auto}
+#mo img{max-width:100%;max-height:60vh;display:block;margin:0 auto 10px;border-radius:10px}
+label{display:block;margin:10px 0;font-size:.85rem;color:var(--mut)}
+input,textarea{width:100%;font:inherit;font-size:1rem;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}input[type=checkbox]{width:auto;margin-right:6px}
+.heart{font-size:2.6rem;background:none;border:0;color:var(--rose);cursor:pointer;animation:bt 1.6s infinite}@keyframes bt{50%{transform:scale(1.15)}}
+.empty{text-align:center;color:var(--mut);padding:30px 10px;font-style:italic}
+</style></head><body>
+<header><nav id="nav"></nav><button class="ib" id="ed" title="Modo edição">✎</button><button class="ib" id="lo" title="Sair">⏻</button><button class="ib" id="tg" title="Modo noturno">☾</button></header>
+<div id="st" class="meta" style="text-align:center;padding:6px 10px"></div>
+<main id="m"><p class="empty">Carregando…</p></main><div id="mo"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="config.js"></script>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=d=>d?d.split('-').reverse().join('/'):'',today=()=>new Date().toISOString().slice(0,10),src=i=>sb.storage.from('fotos').getPublicUrl(i).data.publicUrl;
+const S={
+photos:{t:'Fotos',asc:1,f:[['img','img','Foto'],['title','text','Legenda'],['album','text','Álbum'],['date','date','Data'],['place','text','Local'],['desc','area','Descrição'],['fav','chk','Favorita (aparece na página inicial)']]},
+diary:{t:'Diário',f:[['title','text','Título'],['date','date','Data'],['text','area','Texto'],['img','img','Foto (opcional)']]},
+letters:{t:'Cartas',f:[['title','text','Título'],['date','date','Data'],['text','area','Carta ou mensagem'],['unlock','date','Ocultar até (opcional, surpresa)'],['draft','chk','Rascunho (só você vê)']]},
+timeline:{t:'Linha do tempo',asc:1,f:[['title','text','Acontecimento'],['date','date','Data'],['desc','area','Descrição'],['img','img','Foto']]},
+dates:{t:'Datas especiais',f:[['title','text','Título'],['date','date','Data'],['yearly','chk','Repete todo ano']]},
+reasons:{t:'Por que amo você',f:[['text','area','Motivo']]},
+favs:{t:'Nossos momentos favoritos',f:[['title','text','Título'],['desc','area','Descrição'],['img','img','Foto']]},
+dreams:{t:'Sonhos e planos',f:[['title','text','Sonho ou plano'],['desc','area','Detalhes']]}};
+const CF=[['n1','text','Nome 1'],['n2','text','Nome 2'],['start','date','Início do relacionamento'],['phrase','text','Frase sobre vocês'],['welcome','area','Mensagem de boas-vindas'],['hero','img','Foto de destaque'],['surprise','area','Surpresa do coração']];
+const D={meta:[]};Object.keys(S).forEach(k=>D[k]=[]);
+let db,user,assets,ED=false,tab='home',AL='',mem=null,loaded=0;
+const cfg=()=>D.meta.find(x=>x._i=='config')||{};
+function shrink(f){return createImageBitmap(f).then(b=>{const r=Math.min(1,1600/Math.max(b.width,b.height)),c=document.createElement('canvas');c.width=b.width*r;c.height=b.height*r;c.getContext('2d').drawImage(b,0,0,c.width,c.height);return new Promise(ok=>c.toBlob(x=>ok(x||f),'image/jpeg',.82))}).catch(()=>f)}
+function modal(h){const o=$('#mo');o.innerHTML='<div>'+h+'</div>';o.style.display='flex';o.onclick=e=>{if(e.target==o)close()}}
+function close(){$('#mo').style.display='none'}
+function openForm(k,old){const F=k=='meta'?CF:S[k].f,v=old||{};
+ modal('<h3>'+(old?'Editar':'Adicionar')+'</h3><form id="fm">'+F.map(([n,t,l])=>t=='chk'?`<label><input type=checkbox name=${n} ${v[n]?'checked':''}>${l}</label>`:t=='area'?`<label>${l}<textarea name=${n} rows=7>${esc(v[n])}</textarea></label>`:t=='img'?`<label>${l}${v[n]?' (vazio = manter atual)':''}<input type=file name=${n} accept="image/*"></label>`:`<label>${l}<input type=${t} name=${n} value="${esc(v[n])}"></label>`).join('')+'<div class=row><button class=btn id=sv>Salvar</button><button type=button class="btn s" onclick="close()">Cancelar</button></div></form>');
+ $('#fm').onsubmit=async e=>{e.preventDefault();const f=e.target,b=$('#sv');b.disabled=true;b.textContent='Salvando…';
+  try{const o={};if(old)for(const x in old)if(x!='_i')o[x]=old[x];
+   for(const[n,t]of F){if(t=='img'){const fl=f[n].files[0];if(fl){if(!assets)throw Error('Envio de imagens indisponível');o[n]=(await assets.upload(await shrink(fl))).id}}else if(t=='chk')o[n]=f[n].checked;else o[n]=f[n].value.trim()}
+   const id=k=='meta'?'config':old?old._i:'d'+Date.now().toString(36);
+   await db.doc(k+'/'+id).set(o);close()}catch(x){b.disabled=false;b.textContent='Salvar';alert('Não foi possível salvar: '+(x.message||x.code))}}}
+async function del(k,id){if(confirm('Excluir definitivamente?')){try{await db.doc(k+'/'+id).delete()}catch(e){alert('Erro ao excluir')}}}
+const getItem=(k,i)=>D[k].find(x=>x._i==i);
+const act=(k,i)=>ED?`<div class=row><button class="btn s sm" onclick="openForm('${k}',getItem('${k}','${i}'))">Editar</button><button class="btn s sm" onclick="del('${k}','${i}')">Excluir</button></div>`:'';
+const addb=k=>ED?`<div class=row><button class=btn onclick="openForm('${k}')">+ Adicionar</button></div>`:'';
+function sorted(k){const a=D[k].slice().sort((x,y)=>(x.date||'')<(y.date||'')?-1:1);return S[k].asc?a:a.reverse()}
+function card(k,x){const i=x._i;
+ if(k=='letters'){if(x.draft&&!ED)return'';const lock=x.unlock&&x.unlock>today()&&!ED;
+  return`<div class=card><h3>${esc(x.title)||'Sem título'} ${x.draft?'<span class=badge>rascunho</span>':''}${x.unlock&&x.unlock>today()?'<span class=badge>oculta até '+fmt(x.unlock)+'</span>':''}</h3><div class=meta>${fmt(x.date)}</div>${lock?'<p class=empty>🔒 Esta carta é uma surpresa e abrirá em '+fmt(x.unlock)+'.</p>':'<p class=txt>'+esc(x.text)+'</p>'}${act(k,i)}</div>`}
+ if(k=='dates'){const n=nextD(x);return`<div class=card><h3>${esc(x.title)}</h3><div class=meta>${fmt(x.date)}${x.yearly?' · todo ano':''}</div><p><b style="font-size:1.4rem;color:var(--wine)">${n}</b></p>${act(k,i)}</div>`}
+ if(k=='reasons')return`<div class=card><p class=txt style="font-family:'Cormorant Garamond',serif;font-size:1.25rem">♥ ${esc(x.text)}</p>${act(k,i)}</div>`;
+ return`<div class=card>${x.img?`<img class=c loading=lazy src="${src(x.img)}" alt="">`:''}<h3>${esc(x.title)}</h3><div class=meta>${fmt(x.date)}</div><p class=txt>${esc(x.text||x.desc)}</p>${act(k,i)}</div>`}
+function nextD(x){if(!x.date)return'';const t0=new Date(today()+'T00:00'),d=new Date(x.date+'T00:00');if(x.yearly){d.setFullYear(t0.getFullYear());if(d<t0)d.setFullYear(t0.getFullYear()+1)}
+ const n=Math.round((d-t0)/864e5);return n==0?'É hoje! ♥':n>0?'Faltam '+n+(n==1?' dia':' dias'):'Há '+(-n)+(n==-1?' dia':' dias')}
+function upc(){return D.dates.filter(x=>x.date).map(x=>{const t0=new Date(today()+'T00:00'),d=new Date(x.date+'T00:00');if(x.yearly){d.setFullYear(t0.getFullYear());if(d<t0)d.setFullYear(t0.getFullYear()+1)}return{x,d}}).filter(o=>o.d>=t0).sort((a,b)=>a.d-b.d)}
+function diff(a,b){let y=b.getFullYear()-a.getFullYear(),m=b.getMonth()-a.getMonth(),d=b.getDate()-a.getDate(),h=b.getHours()-a.getHours(),i=b.getMinutes()-a.getMinutes(),s=b.getSeconds()-a.getSeconds();if(s<0){s+=60;i--}if(i<0){i+=60;h--}if(h<0){h+=24;d--}if(d<0){d+=new Date(b.getFullYear(),b.getMonth(),0).getDate();m--}if(m<0){m+=12;y--}return[y,m,d,h,i,s]}
+function tick(){const e=$('#cnt');if(!e)return;const c=cfg();if(!c.start){e.innerHTML='';return}const a=new Date(c.start+'T00:00'),n=new Date(),v=a>n?[0,0,0,0,0,0]:diff(a,n);
+ e.innerHTML=['anos','meses','dias','horas','minutos','segundos'].map((l,i)=>`<div><b>${v[i]}</b><span>${l}</span></div>`).join('')}
+function home(){const c=cfg(),fav=D.photos.filter(p=>p.fav&&p.img).slice(0,6),pool=D.diary.concat(D.timeline).filter(x=>x.text||x.desc);
+ if(!mem||!pool.includes(mem))mem=pool[Math.floor(Math.random()*pool.length)]||null;const u=upc()[0];
+ return`<div class=hero>${c.hero?`<img class=pic src="${src(c.hero)}" alt="">`:'<div class=pic></div>'}<h1>${c.n1||c.n2?esc(c.n1)+' <span style="color:var(--rose)">&amp;</span> '+esc(c.n2):'Nossa História'}</h1><div class=phrase>${esc(c.phrase)}</div><div class=cnt id=cnt></div>
+ ${c.welcome?`<p class=txt style="max-width:560px;margin:0 auto">${esc(c.welcome)}</p>`:''}
+ ${c.surprise||ED?`<p><button class=heart onclick="modal('<h3>Para você ♥</h3><p class=txt>'+esc(cfg().surprise||'Defina a surpresa em Personalizar.')+'</p><button class=btn onclick=close()>Fechar</button>')" title="Abrir surpresa">♥</button></p>`:''}
+ ${ED?'<button class="btn s" onclick="openForm(\'meta\',cfg())">Personalizar</button>':''}</div>
+ ${u?`<div class=card><span class=meta>Próxima data especial</span><h3>${esc(u.x.title)}</h3>${nextD(u.x)}</div>`:''}
+ ${mem?`<div class=card><span class=meta>Uma recordação</span><h3>${esc(mem.title)}</h3><p class=txt>${esc(mem.text||mem.desc)}</p><button class="btn s sm" onclick="mem=null;draw()">Outra recordação</button></div>`:''}
+ ${fav.length?`<h2>Fotos favoritas</h2><div class=grid>${fav.map(p=>`<div class=ph onclick="zoom('${p._i}')"><img loading=lazy src="${src(p.img)}" alt=""></div>`).join('')}</div>`:''}
+ ${!c.n1&&!D.diary.length&&!ED?'<p class=empty>Esta história ainda está sendo escrita…</p>':''}${!c.n1&&ED?'<p class=empty>Toque em Personalizar para colocar nomes, data, foto e frases.</p>':''}`}
+function zoom(i){const p=getItem('photos',i);if(!p)return;modal(`<img src="${src(p.img)}" alt=""><h3>${esc(p.title)}</h3><div class=meta>${fmt(p.date)}${p.place?' · '+esc(p.place):''}${p.album?' · '+esc(p.album):''}</div><p class=txt>${esc(p.desc)}</p><button class=btn onclick=close()>Fechar</button>`)}
+function photos(){const als=[...new Set(D.photos.map(p=>p.album).filter(Boolean))],a=sorted('photos').filter(p=>!AL||p.album==AL);
+ return`<h2>Galeria</h2>${als.length?`<div class=row><span class="chip ${AL?'':'on'}" onclick="AL='';draw()">Todas</span>${als.map(x=>`<span class="chip ${AL==x?'on':''}" onclick="AL=this.dataset.a;draw()" data-a="${esc(x)}">${esc(x)}</span>`).join('')}</div>`:''}${addb('photos')}
+ <div class=grid>${a.map(p=>`<div><div class=ph onclick="zoom('${p._i}')">${p.img?`<img loading=lazy src="${src(p.img)}" alt="">`:''}</div><div class=meta>${esc(p.title)}</div>${act('photos',p._i)}</div>`).join('')}</div>${a.length?'':'<p class=empty>Nenhuma foto ainda.</p>'}`}
+function list(k){const a=sorted(k);return`<h2>${S[k].t}</h2>${addb(k)}${k=='timeline'?'<div class=tl>':''}${a.map(x=>card(k,x)).join('')||'<p class=empty>Nada por aqui ainda.</p>'}${k=='timeline'?'</div>':''}`}
+function draw(){$('#nav').innerHTML=[['home','Início']].concat(Object.keys(S).map(k=>[k,S[k].t])).map(([k,t])=>`<button class="${tab==k?'on':''}" onclick="tab='${k}';draw();scrollTo(0,0)">${t}</button>`).join('');
+ if(!db){$('#m').innerHTML='<p class=empty>Carregando…</p>';return}
+ $('#m').innerHTML=!loaded?'<p class=empty>Carregando…</p>':tab=='home'?home():tab=='photos'?photos():list(tab);tick();const n=$('#nav .on');n&&n.scrollIntoView({inline:'center',block:'nearest'})}
+function theme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem('th',t)}catch(e){}$('#tg').textContent=t=='dark'?'☀':'☾'}
+$('#tg').onclick=()=>theme(document.documentElement.dataset.theme=='dark'?'light':'dark');
+(function(){let t;try{t=localStorage.getItem('th')}catch(e){}if(!t&&matchMedia('(prefers-color-scheme:dark)').matches)t='dark';if(t)theme(t)})();
+$('#ed').onclick=()=>{ED=!ED;$('#ed').style.background=ED?'var(--wine)':'';$('#ed').style.color=ED?'var(--bg)':'';draw()};document.close=window.close;addEventListener('error',e=>{$('#st').textContent='Erro: '+e.message});setInterval(tick,1000);draw();
+const sb=supabase.createClient(CFG.url,CFG.key),L={};
+const refresh=k=>Promise.all((L[k]||[]).map(f=>f()));
+db={collection:k=>({onSnapshot:(cb,eb)=>{const run=async()=>{const r=await sb.from('items').select('id,data').eq('col',k);r.error?eb&&eb():cb({docs:r.data.map(x=>({id:x.id,data:()=>x.data}))})};(L[k]=L[k]||[]).push(run);run()}}),
+doc:p=>{const[k,id]=p.split('/');return{set:async o=>{const r=await sb.from('items').upsert({col:k,id,data:o});if(r.error)throw r.error;await refresh(k)},delete:async()=>{const r=await sb.from('items').delete().eq('col',k).eq('id',id);if(r.error)throw r.error;await refresh(k)}}}};
+assets={upload:async b=>{const n=crypto.randomUUID()+'.jpg',r=await sb.storage.from('fotos').upload(n,b,{contentType:'image/jpeg'});if(r.error)throw r.error;return{id:n}}};
+function showLogin(){$('#m').innerHTML='<div class=card style="max-width:380px;margin:40px auto"><h2>Entrar</h2><form id=lg><label>E-mail<input name=e type=email required></label><label>Senha<input name=p type=password required></label><button class=btn>Entrar</button><p class=meta id=le></p></form></div>';
+ $('#lg').onsubmit=async ev=>{ev.preventDefault();const f=ev.target,r=await sb.auth.signInWithPassword({email:f.e.value.trim(),password:f.p.value});if(r.error)return $('#le').textContent='E-mail ou senha incorretos.';go(r.data.session)}}
+let started=0;
+function go(s){ED=(s.user.email||'').toLowerCase()==CFG.admin.toLowerCase();$('#ed').style.display=ED?'':'none';if(started){draw();return}started=1;
+ const keys=Object.keys(D);let n=0;keys.forEach(k=>db.collection(k).onSnapshot(r=>{D[k]=r.docs.map(d=>Object.assign({_i:d.id},d.data()));if(++n>=keys.length)loaded=1;if(loaded)draw()},()=>{loaded=1;draw()}));draw()}
+$('#lo').onclick=async()=>{await sb.auth.signOut();location.reload()};
+sb.auth.getSession().then(r=>r.data.session?go(r.data.session):showLogin());
+</script></body></html>
